@@ -16,14 +16,14 @@ iframe{border:0;width:100%;height:100%;background:#fff;transition:width .3s}
 @media(max-width:980px){.bar .t,.bar .ref,.bar a.cur{display:none}.bar button{padding:8px 10px}}
 </style></head><body>
 <div class="bar"><span class="t">더건강한치과 리뉴얼 시안</span>
-<button data-v="A" class="on">A · 밝은성모안과형</button><button data-v="B">B · 디몰형</button><button data-v="C">C · 글로리서울형</button>
+<button data-v="A" class="on">A · 아치 스플릿</button><button data-v="B">B · 진료 비교몰</button><button data-v="C">C · 인덱스 클래식</button>
 <span class="sp"></span><a class="ref" id="ref" target="_blank" style="text-decoration:none"></a>
 <div class="dv"><button data-d="pc" class="on">PC</button><button data-d="m">모바일</button></div>
 <a class="cur" href="#" onclick="window.open(document.getElementById('fr').src);return false;">새 창으로 보기 ↗</a></div>
 <div class="stage" id="stage"><iframe id="fr" title="시안"></iframe></div>
 <script>
 const SRC={A:"a.html",B:"b.html",C:"c.html"};
-const DESC={A:['참고: oklasik.com ↗','https://www.oklasik.com/'],B:['참고: dmall.co.kr ↗','https://dmall.co.kr/'],C:['참고: gloryseoul.co.kr ↗','https://gloryseoul.co.kr/']};
+const DESC={A:['남색 · 청록 · 아치형 사진 · 진료 탭',''],B:['진료 비교 카드 · 이번 주 진료일 · 체크리스트',''],C:['인덱스 그리드 · 영상 · 칼럼 · 빠른상담','']};
 const fr=document.getElementById('fr');
 function show(v){document.querySelectorAll('[data-v]').forEach(function(b){b.classList.toggle('on',b.dataset.v===v);});fr.src=SRC[v];var r=document.getElementById('ref');r.textContent=DESC[v][0];if(DESC[v][1])r.href=DESC[v][1];else r.removeAttribute('href');}
 document.querySelectorAll('[data-v]').forEach(function(b){b.onclick=function(){show(b.dataset.v);};});
