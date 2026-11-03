@@ -1,0 +1,409 @@
+<!doctype html><html lang="ko"><head><title>더건강한치과 리뉴얼 시안 C</title><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--t:#1EABC8;--t2:#dff4f9;--t3:#f0fafc;--n:#1C2E5C;--y:#FFD43B;--y2:#fff6d1;--c:#ff6b5b;--g:#64708a;--l:#e3eaf2}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Pretendard',sans-serif;color:#15203a;background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased;word-break:keep-all}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+button{font:inherit;cursor:pointer}
+.w{max-width:1200px;margin:0 auto;padding-left:28px;padding-right:28px}
+.band{background:var(--n);color:#fff;font-size:13.5px}
+.band .w{display:flex;align-items:center;gap:12px;height:42px;overflow:hidden;white-space:nowrap}
+.band b{background:var(--y);color:var(--n);font-size:11.5px;font-weight:800;border-radius:999px;padding:2px 9px}
+.band span{opacity:.9}
+header{background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 1px 0 var(--l)}
+header .w{display:flex;align-items:center;height:74px;gap:34px}
+header .lg img{height:36px}
+header nav{display:flex;gap:6px;flex:1}
+header nav a{font-weight:600;font-size:15.5px;padding:9px 14px;border-radius:999px;color:#2c3754}
+header nav a:hover{background:var(--t3);color:var(--t)}
+.pill{display:inline-flex;align-items:center;gap:7px;border-radius:999px;font-weight:700;font-size:15px;padding:12px 20px;white-space:nowrap}
+.pill.t{background:var(--t);color:#fff}
+.pill.y{background:#FEE500;color:#191600}
+.pill.wh{background:#fff;color:var(--n);border:1.5px solid var(--l)}
+.pill.n{background:var(--n);color:#fff}
+/* hero : full-bleed background */
+.hero{position:relative;overflow:hidden;min-height:760px;display:flex;align-items:center;padding-top:80px;padding-bottom:170px;color:#fff;background:#0e1834}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 35%;transform:scale(1.04);animation:kb 18s ease-out forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero:before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(12,22,50,.92) 0%,rgba(12,22,50,.78) 34%,rgba(12,22,50,.25) 64%,rgba(12,22,50,.05) 100%)}
+.hero:after{content:'';position:absolute;left:0;right:0;bottom:0;height:200px;z-index:1;background:linear-gradient(0deg,rgba(12,22,50,.55),transparent)}
+.hero .w{position:relative;z-index:2;width:100%}
+.hero .in{max-width:600px}
+.hero .cap{position:absolute;z-index:2;right:28px;bottom:150px;font-size:13px;font-weight:600;color:#fff;background:rgba(12,22,50,.45);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:7px 14px}
+.hero .cap b{color:var(--y);margin-right:6px}
+.stt{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.12);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:8px 16px 8px 12px;font-size:14px;color:#fff}
+.stt .dot{width:10px;height:10px;border-radius:50%;background:#51cf66;box-shadow:0 0 0 4px rgba(81,207,102,.25)}
+.stt.off .dot{background:#ff6b6b;box-shadow:0 0 0 4px rgba(255,107,107,.25)}.stt.lunch .dot,.stt.pre .dot{background:#fcc419;box-shadow:0 0 0 4px rgba(252,196,25,.25)}
+.stt strong{font-weight:800}
+.stt small{color:#d3dbec;font-size:13.5px}
+.hero h1{font-size:64px;line-height:1.18;letter-spacing:-.045em;font-weight:800;margin:26px 0 16px;color:#fff}
+.hero h1 span{position:relative;z-index:0;color:var(--y)}
+.hero .sub{font-size:19px;color:#d7deec;margin-bottom:32px}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:560px}
+.chip{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.1);backdrop-filter:blur(12px);border:1.5px solid rgba(255,255,255,.22);border-radius:18px;padding:14px 16px;text-align:left;font-weight:700;font-size:16px;color:#fff;transition:.15s}
+.chip i{font-style:normal;width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,.14);display:grid;place-items:center;font-size:19px;flex:none}
+.chip:hover{transform:translateY(-2px);background:rgba(255,255,255,.18)}
+.chip.on{background:#fff;color:var(--n);border-color:var(--y);box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.chip.on i{background:var(--y2)}
+.chip{position:relative;overflow:hidden}
+.chip .pg{position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--y);border-radius:0 3px 3px 0}
+.chip.on .pg{animation:pg var(--dur,4.5s) linear forwards}
+.chips.paused .chip.on .pg{animation-play-state:paused}
+@keyframes pg{to{width:100%}}
+.auto{display:flex;align-items:center;gap:8px;margin-top:14px;font-size:12.5px;color:#c5cee3}
+.auto button{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:999px;width:28px;height:28px;font-size:11px;display:grid;place-items:center}
+.pick{position:relative;z-index:3;margin-top:-120px}
+.pick .lb{display:inline-block;color:#fff;font-size:13px;font-weight:800;letter-spacing:.06em;margin-bottom:10px;opacity:.85}
+.panel{background:#fff;border-radius:30px;box-shadow:0 30px 70px rgba(12,22,50,.18);overflow:hidden;position:relative;display:grid;grid-template-columns:.85fr 1.35fr}
+.panel .im{min-height:100%;height:100%;overflow:hidden;position:relative}
+.panel .im img{width:100%;height:100%;object-fit:cover;transition:opacity .3s}
+.panel .im span{position:absolute;left:20px;top:20px;background:var(--y);color:var(--n);font-weight:800;font-size:13px;border-radius:999px;padding:5px 12px}
+.panel .bd{padding:34px 38px 34px}
+.panel h2{font-size:27px;letter-spacing:-.035em;color:var(--n);line-height:1.3}
+.panel p.d{color:#46516b;margin:12px 0 18px;font-size:16px}
+.panel .who{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.panel .who span{background:var(--t3);color:#0e7c93;font-weight:700;font-size:13.5px;border-radius:999px;padding:6px 12px}
+.panel .rd{border-top:1px dashed var(--l);padding-top:16px}
+.panel .rd small{display:block;font-size:12.5px;font-weight:800;color:var(--t);letter-spacing:.06em;margin-bottom:6px}
+.panel .rd a{display:block;font-weight:600;font-size:15px;padding:5px 0;color:#2c3754}
+.panel .rd a:before{content:'📖 ';}
+.panel .rd a:hover{color:var(--t)}
+.panel .ac{display:flex;gap:8px;margin-top:22px;max-width:440px}
+.panel .ac .pill{flex:1;justify-content:center}
+.fade{animation:fd .35s ease}
+@keyframes fd{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+/* trust strip */
+.trust{margin-top:18px;position:relative;z-index:2}
+.trust .w>div{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.trust .it{background:#fff;border-radius:22px;padding:22px 22px;box-shadow:0 12px 30px rgba(28,46,92,.08);display:flex;gap:14px;align-items:center}
+.trust .it b{font-size:28px;font-weight:900;color:var(--t);letter-spacing:-.03em;flex:none;min-width:58px}
+.trust .it span{font-size:14.5px;color:#36415c;font-weight:600;line-height:1.45}
+/* section base */
+.s{padding-top:110px}
+.h{text-align:center;margin-bottom:44px}
+.h em{font-style:normal;display:inline-block;background:var(--t2);color:#0e7c93;font-weight:800;font-size:13px;border-radius:999px;padding:5px 14px;margin-bottom:14px}
+.h h2{font-size:40px;letter-spacing:-.04em;line-height:1.3;color:var(--n)}
+.h p{color:var(--g);margin-top:10px;font-size:16.5px}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;position:relative}
+.step{background:var(--t3);border-radius:26px;padding:28px 24px 26px;position:relative}
+.step .n{width:46px;height:46px;border-radius:50%;background:var(--n);color:#fff;font-weight:800;display:grid;place-items:center;font-size:17px;margin-bottom:20px}
+.step:nth-child(3) .n{background:var(--t)}
+.step h3{font-size:20px;letter-spacing:-.03em;color:var(--n);margin-bottom:6px}
+.step p{font-size:15px;color:#4a556e}
+.step:not(:last-child):after{content:'';position:absolute;right:-12px;top:50px;width:10px;height:10px;border-top:2.5px solid #9fd9e6;border-right:2.5px solid #9fd9e6;transform:rotate(45deg);z-index:2}
+.snote{text-align:center;font-size:13px;color:#97a0b3;margin-top:14px}
+/* schedule */
+.sch{display:grid;grid-template-columns:1.25fr 1fr;gap:18px}
+.card{background:#fff;border:1.5px solid var(--l);border-radius:28px;padding:32px}
+.card h3{font-size:22px;letter-spacing:-.03em;color:var(--n);margin-bottom:4px}
+.card>p{color:var(--g);font-size:14.5px;margin-bottom:22px}
+.bars{display:grid;gap:9px}
+.bar{display:grid;grid-template-columns:44px 1fr 98px;align-items:center;gap:12px;font-size:14.5px}
+.bar b{font-weight:800;color:var(--n)}
+.bar .tr{height:30px;background:#f2f5f9;border-radius:10px;position:relative;overflow:hidden}
+.bar .tr i{position:absolute;top:0;bottom:0;background:var(--t);border-radius:10px}
+.bar .tr i.ln{background:repeating-linear-gradient(45deg,#cfeaf1,#cfeaf1 4px,#e6f5f9 4px,#e6f5f9 8px);border-radius:0}
+.bar.ngt .tr i:not(.ln){background:linear-gradient(90deg,var(--t),var(--n))}
+.bar.off .tr{background:#fff0ee}
+.bar.off .tr:after{content:'휴진';position:absolute;left:12px;top:5px;font-size:13px;font-weight:700;color:var(--c)}
+.bar span{text-align:right;font-weight:700;font-size:14px;color:#36415c}
+.bar.off span{color:var(--c)}
+.bar.today b:after{content:'';display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--y);margin-left:4px;vertical-align:3px;box-shadow:0 0 0 3px #fff3bf}
+.axis{display:grid;grid-template-columns:44px 1fr 98px;gap:12px;font-size:11.5px;color:#9aa3b5;margin-top:6px}
+.axis div{display:flex;justify-content:space-between}
+.cal table{width:100%;border-collapse:separate;border-spacing:4px;text-align:center}
+.cal th{font-size:12.5px;color:var(--g);font-weight:700;padding-bottom:4px}
+.cal th:first-child{color:var(--c)}.cal th:last-child{color:var(--t)}
+.cal td{height:52px;border-radius:12px;background:#f6f8fb;font-weight:700;font-size:15px;vertical-align:top;padding-top:6px;color:#2c3754}
+.cal td small{display:block;font-size:10.5px;font-weight:800;margin-top:1px}
+.cal td.e{background:none}
+.cal td.su{color:var(--c)}.cal td.sa{color:var(--t)}
+.cal td.ng{background:var(--n);color:#fff}.cal td.ng small{color:var(--y)}
+.cal td.of{background:#fff0ee;color:var(--c)}
+.lg2{display:flex;gap:14px;font-size:12.5px;color:var(--g);margin-top:12px}
+.lg2 span:before{content:'';display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px;background:var(--n)}
+.lg2 span.o:before{background:#ffd5cf}
+/* doctors */
+.dg{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.dc{display:flex;gap:24px;background:var(--t3);border-radius:28px;padding:24px;align-items:center}
+.dc .ph{width:170px;height:200px;border-radius:22px;overflow:hidden;background:#8d8a86;flex:none}
+.dc .ph img{width:100%;height:100%;object-fit:cover;transform:scale(1.5);transform-origin:50% 36%}
+.dc h3{font-size:24px;letter-spacing:-.03em;color:var(--n)}
+.dc h3 small{font-size:15px;color:var(--g);margin-left:6px;font-weight:600}
+.dc p{font-size:14.5px;color:#46516b;margin:8px 0 12px}
+.dc .tg{display:flex;flex-wrap:wrap;gap:6px}
+.dc .tg span{background:#fff;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;color:var(--n)}
+/* promise row */
+.pr{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.pc{border-radius:28px;padding:32px;position:relative;overflow:hidden;min-height:250px;display:flex;flex-direction:column}
+.pc.a{background:var(--n);color:#fff}
+.pc.b{background:var(--y2)}
+.pc.c{background:var(--t2)}
+.pc small{font-weight:800;font-size:13px;letter-spacing:.06em;opacity:.75}
+.pc h3{font-size:24px;line-height:1.35;letter-spacing:-.03em;margin:10px 0 10px}
+.pc p{font-size:14.5px;opacity:.85}
+.pc .tb{margin-top:auto;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding-top:18px}
+.pc .tb div{background:rgba(255,255,255,.1);border-radius:14px;padding:10px 12px;font-size:13px}
+.pc .tb b{display:block;font-size:16px;color:var(--y)}
+.pc .big{font-size:64px;font-weight:900;letter-spacing:-.05em;color:var(--n);line-height:1;margin-top:auto}
+.pc .big small{font-size:20px;opacity:1;letter-spacing:0}
+/* faq */
+.fq{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.fq a{border:1.5px solid var(--l);border-radius:24px;padding:24px;display:flex;flex-direction:column;min-height:190px;transition:.2s}
+.fq a:hover{border-color:var(--t);box-shadow:0 14px 30px rgba(30,171,200,.15)}
+.fq i{font-style:normal;font-weight:900;color:var(--t);font-size:22px}
+.fq h4{font-size:18px;letter-spacing:-.03em;line-height:1.45;color:var(--n);margin:8px 0 auto}
+.fq span{font-size:13px;color:var(--g);font-weight:600;margin-top:16px}
+.fq span b{color:var(--t)}
+/* tour */
+.tour{display:flex;gap:12px;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}
+.tour figure{flex:none;width:300px;border-radius:22px;overflow:hidden;position:relative}
+.tour img{width:100%;height:210px;object-fit:cover}
+.tour figcaption{position:absolute;left:12px;bottom:12px;background:#fff;border-radius:999px;font-size:13px;font-weight:700;padding:4px 12px;color:var(--n)}
+.eqs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:18px}
+.eqs span{background:var(--t3);border-radius:999px;padding:7px 14px;font-size:13.5px;font-weight:700;color:#0e7c93}
+/* visit */
+.vis2{margin-top:110px;background:var(--n);color:#fff;padding-top:80px;padding-bottom:80px}
+.vis2 .w{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.vis2 h2{font-size:38px;letter-spacing:-.04em;line-height:1.3}
+.vis2 h2 span{color:var(--y)}
+.vis2 .ad{margin:18px 0 26px;color:#c5cee3;font-size:16.5px}
+.vis2 .bt{display:flex;gap:8px;flex-wrap:wrap}
+.vis2 .tel{font-size:46px;font-weight:900;letter-spacing:-.03em;display:block;margin-bottom:10px;color:#fff}
+.vis2 .ph{border-radius:28px;overflow:hidden;height:330px}
+.vis2 .ph img{width:100%;height:100%;object-fit:cover}
+footer{background:#121d3d;color:#8995b3;font-size:13px;padding-top:36px;padding-bottom:48px}
+footer .w{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer .lg{background:#fff;border-radius:12px;padding:8px 12px;display:inline-block;margin-bottom:12px}
+footer .lg img{height:26px}
+.mbar{display:none}
+@media(max-width:1000px){
+ .w{padding-left:18px;padding-right:18px}
+ header .w{height:62px}header .lg img{height:30px}
+ header nav,header .pill{display:none}
+ header .w:after{content:'☰';margin-left:auto;font-size:20px;background:var(--t3);width:40px;height:40px;border-radius:12px;display:grid;place-items:center}
+ .hero{min-height:auto;padding-top:250px;padding-bottom:140px;align-items:flex-start}
+ .hero .bg{height:360px;bottom:auto;object-position:78% 30%}
+ .hero:before{background:linear-gradient(180deg,rgba(12,22,50,.05) 0px,rgba(12,22,50,.35) 180px,#0e1834 350px,#0e1834 100%)}
+ .hero .cap{display:block;right:auto;left:18px;top:200px;bottom:auto;font-size:12px;padding:5px 12px}
+ .hero h1{font-size:38px;margin-top:20px}
+ .hero .sub{font-size:15.5px;margin-bottom:22px}
+ .pick{margin-top:-100px}
+ .panel{grid-template-columns:1fr}
+ .chip{font-size:14.5px;padding:11px 12px;gap:9px;border-radius:16px}
+ .chip i{width:32px;height:32px;font-size:16px}
+ .panel .im{height:170px;min-height:0}
+ .panel .bd{padding:22px}
+ .panel h2{font-size:22px}
+ .trust{margin-top:12px}
+ .trust .w>div{grid-template-columns:1fr 1fr;gap:8px}
+ .trust .it{padding:16px;gap:10px;flex-direction:column;align-items:flex-start;border-radius:18px}
+ .trust .it b{font-size:24px}
+ .trust .it span{font-size:13px}
+ .s{padding-top:76px}
+ .h{margin-bottom:28px}
+ .h h2{font-size:28px}
+ .steps{grid-template-columns:1fr 1fr;gap:10px}
+ .step{padding:22px 18px}
+ .step:after{display:none}
+ .step h3{font-size:17px}.step p{font-size:14px}
+ .sch,.dg,.pr,.vis2 .w{grid-template-columns:1fr}
+ .card{padding:22px}
+ .bar{grid-template-columns:24px 1fr 86px;gap:8px;font-size:13px}
+ .bar span{font-size:12px;letter-spacing:-.02em}
+ .axis{grid-template-columns:24px 1fr 86px;gap:8px}
+ .cal td{height:46px;font-size:14px}
+ .dc{flex-direction:column;align-items:flex-start;padding:18px}
+ .dc .ph{width:100%;height:240px}
+ .dc .ph img{transform:scale(1.25)}
+ .fq{grid-template-columns:1fr}
+ .fq a{min-height:auto}
+ .tour figure{width:240px}.tour img{height:170px}
+ .vis2{margin-top:76px;padding-top:56px;padding-bottom:56px}
+ .vis2 h2{font-size:28px}.vis2 .tel{font-size:36px}
+ .vis2 .ph{height:220px}
+ footer{padding-bottom:100px}
+ .mbar{display:grid;grid-template-columns:1.2fr 1fr 1fr;position:fixed;left:10px;right:10px;bottom:10px;gap:6px;z-index:30}
+ .mbar a{text-align:center;padding:14px 0;border-radius:16px;font-weight:800;font-size:14.5px;box-shadow:0 10px 24px rgba(0,0,0,.2)}
+ .mbar a:nth-child(1){background:var(--t);color:#fff}
+ .mbar a:nth-child(2){background:#FEE500;color:#191600}
+ .mbar a:nth-child(3){background:var(--n);color:#fff}
+}
+img[alt="김택성 대표원장"]{object-position:74% 30% !important;transform-origin:74% 34% !important}
+</style></head><body>
+<div class="band"><div class="w"><b>11월 일정</b><span>화요일 야간진료 3 · 10 · 17 · 24일 (밤 9시까지) &nbsp;|&nbsp; 목요일 휴진 5 · 12 · 19 · 26일</span></div></div>
+<header><div class="w">
+<a class="lg" href="#"><img src="assets/logo.png" alt="더건강한치과"></a>
+<nav><a href="#">병원 소개</a><a href="#">사랑니</a><a href="#">임플란트</a><a href="#">일반 진료</a><a href="#">소아·예방</a><a href="#sch">진료시간</a></nav>
+<a class="pill y" href="#">카톡 상담</a><a class="pill t" href="tel:041-553-2004">전화 예약</a>
+</div></header>
+
+<section class="hero"><img class="bg" src="assets/herobg.jpg" alt="김택성 대표원장 수술 장면"><div class="w"><div class="in">
+<div class="stt" data-st><span class="dot"></span><strong data-l>지금 진료 중</strong><small data-s>오늘 18:30까지</small></div>
+<h1>어디가 불편해서<br><span>오셨어요?</span></h1>
+<p class="sub">고민을 고르면, 어떤 진료를 누가 하는지 바로 알려 드려요.<br>구강악안면외과 · 통합치의학과 전문의가 직접 진료합니다.</p>
+<div class="chips" id="chips">
+<button class="chip on" data-k="w"><i>🦷</i>사랑니가 욱신거려요</button>
+<button class="chip" data-k="i"><i>🔩</i>이가 빠진 채로 지내요</button>
+<button class="chip" data-k="p"><i>👵</i>부모님 임플란트가 걱정돼요</button>
+<button class="chip" data-k="g"><i>🩸</i>잇몸에서 피가 나요</button>
+<button class="chip" data-k="k"><i>🧒</i>아이 첫 치과예요</button>
+<button class="chip" data-k="j"><i>💬</i>턱에서 소리가 나요</button>
+</div>
+<div class="auto"><button id="ap" aria-label="자동 넘김 일시정지">❚❚</button><span id="apt">고민이 4.5초마다 자동으로 바뀌어요 · 마우스를 올리면 멈춰요</span></div>
+</div></div>
+<span class="cap"><b>DR. KIM</b>김택성 대표원장 · 구강악안면외과 전문의</span>
+</section>
+
+<section class="pick"><div class="w"><span class="lb">선택한 고민에 맞는 진료</span><div class="panel" id="panel"></div></div></section>
+
+<div class="trust"><div class="w"><div>
+<div class="it"><b>2개</b><span>구강악안면외과 ·<br>통합치의학과 전문의</span></div>
+<div class="it"><b>21시</b><span>매주 화요일<br>야간진료</span></div>
+<div class="it"><b>5년</b><span>임플란트 식립체<br>무상 보증서</span></div>
+<div class="it"><b>3D</b><span>PaX-i3D Smart<br>3차원 진단</span></div>
+</div></div></div>
+
+<section class="s w">
+<div class="h"><em>사랑니 발치 과정</em><h2>처음 오셔도, 이렇게 진행돼요</h2><p>예약제로 운영해 기다림 없이 차례대로 진료합니다.</p></div>
+<div class="steps">
+<div class="step"><span class="n">1</span><h3>전화 · 카톡 예약</h3><p>날짜와 시간을 미리 정해요. 천안·아산 외 지역 분은 변경 시 꼭 알려 주세요.</p></div>
+<div class="step"><span class="n">2</span><h3>3D 촬영 · 진단</h3><p>CT로 사랑니 뿌리와 신경 위치를 확인해 수술의 안정성을 높여요.</p></div>
+<div class="step"><span class="n">3</span><h3>전문의가 직접 설명</h3><p>구강외과 전문의가 사진을 보며 방법과 주의할 점을 설명해요.</p></div>
+<div class="step"><span class="n">4</span><h3>발치 · 관리 안내</h3><p>같은 전문의가 직접 발치하고, 집에서 지킬 것들을 알려 드려요.</p></div>
+</div>
+<p class="snote">* 단계 구성은 시안용 예시입니다. 실제 진료 흐름은 병원 확인 후 확정합니다.</p>
+</section>
+
+<section class="s w" id="sch">
+<div class="h"><em>진료시간</em><h2>퇴근 후에도, 화요일은 밤 9시까지</h2></div>
+<div class="sch">
+<div class="card"><h3>요일별 진료시간</h3><p>평일 점심시간 13:00–14:00 · 일요일·공휴일 휴진</p>
+<div class="bars" id="bars"></div>
+<div class="axis"><span></span><div><span>9시</span><span>12</span><span>15</span><span>18</span><span>21시</span></div><span></span></div>
+</div>
+<div class="card cal"><h3>2026년 11월 진료 일정</h3><p>매주 화요일 야간진료 · 매주 목요일 정기휴진</p>
+<table><thead><tr><th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr></thead><tbody id="cal"></tbody></table>
+<div class="lg2"><span>야간진료</span><span class="o">휴진</span></div>
+</div>
+</div>
+</section>
+
+<section class="s w">
+<div class="h"><em>의료진</em><h2>누가 진료하는지 먼저 확인하세요</h2></div>
+<div class="dg">
+<div class="dc"><div class="ph"><img src="assets/pro.jpg" alt="김택성 대표원장"></div><div><h3>김택성<small>대표원장</small></h3><p>구강악안면외과 · 통합치의학과 전문의<br>단국대학교 치과대학 외래교수</p><div class="tg"><span>사랑니 발치</span><span>임플란트</span><span>네비게이션 임플란트</span><span>턱관절</span></div></div></div>
+<div class="dc"><div class="ph"><img src="assets/pro01.jpg" alt="김나리 원장"></div><div><h3>김나리<small>원장</small></h3><p>대한치과보철학회 · 보존학회 정회원<br>펜실베니아대 근관치료연구회 수료</p><div class="tg"><span>보철</span><span>신경치료</span><span>충치 · 보존</span><span>턱관절</span></div></div></div>
+</div>
+</section>
+
+<section class="s w">
+<div class="h"><em>약속과 보증</em><h2>치료 후가 더 든든하게</h2></div>
+<div class="pr">
+<div class="pc a"><small>IMPLANT GUARANTEE</small><h3>임플란트 보증서를<br>드려요</h3><p>보증은 자신 있다는 뜻이기도 합니다.</p>
+<div class="tb"><div>식립체<b>5년 무상</b>5–7년 50%</div><div>지대주·보철물<b>2년 무상</b>2–5년 50%</div></div></div>
+<div class="pc b"><small>HEALTH INSURANCE</small><h3>만 65세 이상은<br>건강보험 적용</h3><p>임플란트 최대 2개까지 적용돼요.</p><div class="big">65<small>세+</small></div></div>
+<div class="pc c"><small>OUR PROMISE</small><h3>꼭 필요한 진료만<br>권하겠습니다</h3><p>자연치아를 살리기 위해 노력하고, 의사가 직접 상담하고 설명합니다.</p><p style="margin-top:auto;font-weight:700;opacity:.6;font-size:13px">더건강한치과의 7가지 약속 중</p></div>
+</div>
+</section>
+
+<section class="s w">
+<div class="h"><em>자주 묻는 질문</em><h2>원장님께 많이 묻는 것들</h2><p>답은 원장이 직접 쓴 블로그 글에 있어요.</p></div>
+<div class="fq">
+<a href="https://blog.naver.com/2017hdc/224438812999" target="_blank"><i>Q.</i><h4>사랑니 발치, 오늘 뽑고 내일 출근 가능할까요?</h4><span><b>사랑니</b> · 원장 칼럼 읽기 →</span></a>
+<a href="https://blog.naver.com/2017hdc/224410555574" target="_blank"><i>Q.</i><h4>사랑니 2개, 한 번에 발치해도 안전할까요?</h4><span><b>사랑니</b> · 원장 칼럼 읽기 →</span></a>
+<a href="https://blog.naver.com/2017hdc/224403358569" target="_blank"><i>Q.</i><h4>사랑니와 임플란트, 왜 같은 의사에게 맡기는 게 좋을까요?</h4><span><b>사랑니·임플란트</b> · 원장 칼럼 읽기 →</span></a>
+<a href="https://blog.naver.com/2017hdc/224432095436" target="_blank"><i>Q.</i><h4>임플란트, 꼭 나이 들어서 해야 할까요?</h4><span><b>임플란트</b> · 원장 칼럼 읽기 →</span></a>
+<a href="https://blog.naver.com/2017hdc/224462865455" target="_blank"><i>Q.</i><h4>임플란트냐 틀니냐, 무엇으로 결정하나요?</h4><span><b>임플란트</b> · 원장 칼럼 읽기 →</span></a>
+<a href="https://blog.naver.com/2017hdc/224425141191" target="_blank"><i>Q.</i><h4>충치가 있지만 안 아파요. 치료 미뤄도 될까요?</h4><span><b>충치</b> · 원장 칼럼 읽기 →</span></a>
+</div>
+</section>
+
+<section class="s w">
+<div class="h"><em>병원 둘러보기</em><h2>불당동 리앤시티 4층</h2></div>
+<div class="tour">
+<figure><img src="assets/t10.jpg" alt=""><figcaption>안내 데스크</figcaption></figure>
+<figure><img src="assets/t11.jpg" alt=""><figcaption>대기실</figcaption></figure>
+<figure><img src="assets/t03.jpg" alt=""><figcaption>상담실</figcaption></figure>
+<figure><img src="assets/t01.jpg" alt=""><figcaption>진료실</figcaption></figure>
+<figure><img src="assets/t12.jpg" alt=""><figcaption>대기 공간</figcaption></figure>
+</div>
+<div class="eqs"><span>PaX-i3D Smart</span><span>오토클레이브</span><span>EO가스 멸균기</span><span>천안시치과의사회 공식 인증 치과</span></div>
+</section>
+
+<section class="vis2"><div class="w">
+<div><h2>예약하고 오시면<br><span>기다리지 않아요</span></h2>
+<p class="ad">충남 천안시 서북구 불당33길 24, 리앤시티 403호<br>(불당동 1618)</p>
+<a class="tel" href="tel:041-553-2004">041-553-2004</a>
+<div class="bt"><a class="pill y" href="#">카카오톡 상담</a><a class="pill wh" href="https://map.naver.com/p/search/%EB%8D%94%EA%B1%B4%EA%B0%95%ED%95%9C%EC%B9%98%EA%B3%BC" target="_blank">네이버 지도</a><a class="pill wh" href="https://map.kakao.com/?q=%EB%8D%94%EA%B1%B4%EA%B0%95%ED%95%9C%EC%B9%98%EA%B3%BC" target="_blank">카카오맵</a></div></div>
+<div class="ph"><img src="assets/t17.jpg" alt="더건강한치과 입구"></div>
+</div></section>
+<footer><div class="w">
+<div><span class="lg"><img src="assets/logo.png" alt="더건강한치과"></span><br>더건강한치과의원 · 대표자 김택성 · 사업자등록번호 746-47-00168<br>충남 천안시 서북구 불당33길 24, 리앤시티 403호 · T 041-553-2004 · F 041-553-2003 · 2017hdc@naver.com</div>
+<div>블로그 · 인스타그램 · 네이버TV<br>비급여 항목 안내 · 개인정보처리방침</div>
+</div></footer>
+<div class="mbar"><a href="tel:041-553-2004">📞 전화 예약</a><a href="#">카톡 상담</a><a href="#sch">진료시간</a></div>
+<script>
+(function(){
+var D={
+w:{img:'assets/t04.jpg',tag:'사랑니 발치',t:'사랑니 발치는 구강외과 전문의가 직접 합니다',d:'사랑니 발치는 마취를 하고 잇몸뼈와 신경을 다루는 수술입니다. CT 촬영으로 위치를 먼저 확인하고, 매복 사랑니까지 구강악안면외과 전문의가 직접 발치합니다.',who:['욱신거리는 통증','잇몸이 붓고 냄새','누워 있는 매복 사랑니','다른 곳에서 어렵다고 들은 경우'],r:[['사랑니발치, 오늘 뽑고 내일 출근 가능할까요?','224438812999'],['20대에 뽑는 사랑니와 40대에 뽑는 사랑니는 다르다','224418470637']]},
+i:{img:'assets/t01.jpg',tag:'임플란트',t:'빠진 치아, 구강외과 전문의가 직접 심어요',d:'임플란트 식립도 수술입니다. 구강외과 전문의가 직접 식립하고, 식립체 5년 무상 보증서를 드립니다. 발치 즉시 임플란트와 무절개 임플란트도 상담할 수 있어요.',who:['치아가 빠진 지 오래됨','씹을 때 불편함','틀니가 잘 맞지 않음'],r:[['30대도 많이 한다던 임플란트, 꼭 나이 들어서 해야 할까요?','224432095436'],['천안 임플란트 고민 총정리, 통증·비용·기간·수명','224453902436']]},
+p:{img:'assets/t03.jpg',tag:'부모님 임플란트',t:'만 65세 이상은 건강보험으로 최대 2개',d:'3차원 진단으로 잇몸뼈와 신경관, 혈관 위치를 확인한 뒤 계획대로 식립하는 네비게이션 임플란트를 함께 상담합니다. 당뇨·고혈압 등 복용 중인 약은 미리 알려 주세요.',who:['만 65세 이상','당뇨·고혈압 등 전신질환','틀니와 임플란트 사이 고민'],r:[['당뇨&고혈압 있으신 부모님 임플란트, 치과 고르기 전 꼭 확인할 3가지','224446627015'],['임플란트냐 틀니냐 고민, 이 5가지 기준으로 결정하세요','224462865455']]},
+g:{img:'assets/t10.jpg',tag:'잇몸치료',t:'잇몸 출혈은 치주질환의 신호일 수 있어요',d:'치주질환은 치아를 받치는 잇몸뼈를 약하게 만들고, 방치하면 결국 치아를 잃게 됩니다. 정기적인 치주치료로 진행을 막는 것이 가장 중요합니다.',who:['양치할 때 피가 남','잇몸이 붓고 내려감','입 냄새'],r:[['충치가 있지만 안 아파요, 치료 미뤄도 될까요?','224425141191']]},
+k:{img:'assets/t11.jpg',tag:'소아 · 예방',t:'첫 유치가 날 때부터 예방을 시작하세요',d:'예방만큼 좋은 치료는 없습니다. 아이마다 다른 구강 상태를 검진하고, 불소도포·실란트·연령별 칫솔질 교육으로 충치를 미리 막습니다.',who:['첫 치과 검진','불소도포 · 실란트','칫솔질 교육'],r:[]},
+j:{img:'assets/t08.jpg',tag:'턱관절장애',t:'‘딱’ 소리, 통증, 입 벌리기 어려움',d:'턱관절은 사람이 일생에서 가장 많이 움직이는 관절입니다. 소리나 통증, 개구 제한이 있다면 턱관절 장애일 수 있어요. 두 원장 모두 아시아턱관절포럼을 수료했습니다.',who:['입 벌릴 때 소리','턱 주변 통증','입이 잘 안 벌어짐'],r:[]}
+};
+var p=document.getElementById('panel');
+function show(k){var o=D[k];
+p.innerHTML='<div class="im"><img src="'+o.img+'" alt=""><span>'+o.tag+'</span></div><div class="bd fade"><h2>'+o.t+'</h2><p class="d">'+o.d+'</p><div class="who">'+o.who.map(function(x){return '<span>'+x+'</span>';}).join('')+'</div>'+(o.r.length?'<div class="rd"><small>원장 칼럼</small>'+o.r.map(function(x){return '<a href="https://blog.naver.com/2017hdc/'+x[1]+'" target="_blank">'+x[0]+'</a>';}).join('')+'</div>':'')+'<div class="ac"><a class="pill t" href="tel:041-553-2004">전화 예약</a><a class="pill y" href="#">카톡으로 물어보기</a></div></div>';
+document.querySelectorAll('.chip').forEach(function(c){c.classList.toggle('on',c.dataset.k===k);});}
+var ks=['w','i','p','g','k','j'],cur=0,DUR=4500,tm=null,hover=false,stopped=false,left=DUR,t0=0;
+var chipsEl=document.getElementById('chips'),pickEl=document.querySelector('.pick'),apb=document.getElementById('ap'),apt=document.getElementById('apt');
+document.querySelectorAll('.chip').forEach(function(c){var b=document.createElement('span');b.className='pg';c.appendChild(b);});
+chipsEl.style.setProperty('--dur',DUR/1000+'s');
+function restartBar(){document.querySelectorAll('.chip .pg').forEach(function(b){b.style.animation='none';b.offsetWidth;b.style.animation='';});}
+function go(i){cur=(i+ks.length)%ks.length;show(ks[cur]);restartBar();left=DUR;schedule();}
+function schedule(){clearTimeout(tm);if(hover||stopped)return;t0=Date.now();tm=setTimeout(function(){go(cur+1);},left);}
+function pause(){if(tm){clearTimeout(tm);tm=null;left=Math.max(300,left-(Date.now()-t0));}chipsEl.classList.add('paused');}
+function resume(){if(stopped)return;chipsEl.classList.remove('paused');schedule();}
+if(!window.matchMedia||matchMedia('(hover: hover)').matches)[chipsEl,pickEl].forEach(function(el){el.addEventListener('mouseenter',function(){hover=true;pause();});el.addEventListener('mouseleave',function(){hover=false;resume();});});
+document.querySelectorAll('.chip').forEach(function(c){c.onclick=function(){go(ks.indexOf(c.dataset.k));};});
+apb.onclick=function(){stopped=!stopped;if(stopped){pause();apb.textContent='▶';apb.setAttribute('aria-label','자동 넘김 재생');apt.textContent='자동 넘김을 멈췄어요';}else{apb.textContent='❚❚';apb.setAttribute('aria-label','자동 넘김 일시정지');apt.textContent='고민이 4.5초마다 자동으로 바뀌어요 · 마우스를 올리면 멈춰요';resume();}};
+if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){stopped=true;apb.textContent='▶';apt.textContent='자동 넘김을 멈췄어요';}
+show('w');schedule();
+// bars
+var H=[['월',930,1830],['화',930,2100],['수',930,1830],['목'],['금',930,1830],['토',900,1330],['일']];
+var dn=[1,2,3,4,5,6,0];
+function pos(t){return ((Math.floor(t/100)+(t%100)/60)-9)/12*100;}
+var bh='';H.forEach(function(h,i){var off=h.length<2;var ng=h[2]===2100;
+bh+='<div class="bar'+(off?' off':'')+(ng?' ngt':'')+'" data-day="'+dn[i]+'"><b>'+h[0]+'</b><div class="tr">'+(off?'':'<i style="left:'+pos(h[1])+'%;width:'+(pos(h[2])-pos(h[1]))+'%"></i>'+(i<5?'<i class="ln" style="left:'+pos(1300)+'%;width:'+(pos(1400)-pos(1300))+'%"></i>':''))+'</div><span>'+(off?(i===6?'휴진(공휴일)':'정기휴진'):(String(h[1]).replace(/(\d+)(\d\d)$/,'$1:$2').padStart(5,'0')+'–'+String(h[2]).replace(/(\d+)(\d\d)$/,'$1:$2')))+'</span></div>';});
+document.getElementById('bars').innerHTML=bh;
+// cal Nov 2026 starts Sunday
+var c='',d=1;for(var r=0;r<5;r++){c+='<tr>';for(var j=0;j<7;j++){if(d>30){c+='<td class="e"></td>';continue;}var cl=j===0?'su':j===6?'sa':'',sm='';if(j===2){cl='ng';sm='<small>야간</small>';}if(j===4){cl='of';sm='<small>휴진</small>';}c+='<td class="'+cl+'">'+d+sm+'</td>';d++;}c+='</tr>';}
+document.getElementById('cal').innerHTML=c;
+})();
+(function(){
+var H={0:null,1:[930,1830],2:[930,2100],3:[930,1830],4:null,5:[930,1830],6:[900,1330]};
+var DN=['일','월','화','수','목','금','토'];
+function f(t){var h=Math.floor(t/100),m=t%100;return (h<10?'0':'')+h+':'+(m<10?'0':'')+m;}
+function nextOpen(d){for(var i=1;i<8;i++){var k=(d+i)%7;if(H[k])return (i===1?'내일':DN[k]+'요일')+' '+f(H[k][0]);}}
+function st(){
+ var n=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Seoul'}));
+ var d=n.getDay(),t=n.getHours()*100+n.getMinutes(),h=H[d],r;
+ if(!h)r={c:'off',l:'오늘 휴진',s:DN[d]+'요일 휴진 · '+nextOpen(d)+' 진료 시작'};
+ else if(t<h[0])r={c:'pre',l:'진료 전',s:'오늘 '+f(h[0])+' 진료 시작'};
+ else if(t>=h[1])r={c:'off',l:'오늘 진료 종료',s:nextOpen(d)+' 진료 시작'};
+ else if(d!==6&&t>=1300&&t<1400)r={c:'lunch',l:'점심시간',s:'14:00 진료 재개 · 오늘 '+f(h[1])+'까지'};
+ else r={c:'on',l:'지금 진료 중',s:'오늘 '+f(h[1])+'까지'+(d===2?' · 화요 야간진료':'')};
+ document.querySelectorAll('[data-st]').forEach(function(e){e.className='stt '+r.c;e.querySelector('[data-l]').textContent=r.l;e.querySelector('[data-s]').textContent=r.s;});
+ document.querySelectorAll('[data-day]').forEach(function(e){e.classList.toggle('today',+e.dataset.day===d);});
+}
+st();setInterval(st,60000);
+})();
+
+</script>
+</body></html>

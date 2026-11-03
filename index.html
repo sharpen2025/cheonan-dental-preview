@@ -1,0 +1,33 @@
+<!doctype html><html lang="ko"><head><meta charset="UTF-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>더건강한치과 홈페이지 리뉴얼 시안 3종</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>*{box-sizing:border-box;margin:0;padding:0}html,body{height:100%;background:#2a2a2e;font-family:'Pretendard',sans-serif;overflow:hidden}
+.bar{height:56px;background:#111;color:#fff;display:flex;align-items:center;gap:6px;padding:0 14px;font-size:13px}
+.bar .t{opacity:.55;font-weight:600;margin-right:8px;white-space:nowrap}
+.bar button{border:0;background:none;color:#aaa;font:inherit;font-weight:600;padding:9px 14px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.bar button.on{background:#fff;color:#111}
+.bar .sp{flex:1}
+.bar .ref{color:#7fd3ff;font-size:12.5px;white-space:nowrap;margin-right:10px}
+.bar .dv{display:flex;background:#2a2a2e;border-radius:999px;padding:3px}
+.bar .dv button{padding:6px 12px;font-size:12px}
+.bar a.cur{color:#bbb;font-size:12px;text-decoration:none;margin-left:10px;white-space:nowrap}
+.stage{height:calc(100% - 56px);display:flex;justify-content:center}
+iframe{border:0;width:100%;height:100%;background:#fff;transition:width .3s}
+.stage.m{padding:16px 0}.stage.m iframe{width:390px;border-radius:24px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+@media(max-width:980px){.bar .t,.bar .ref,.bar a.cur{display:none}.bar button{padding:8px 10px}}
+</style></head><body>
+<div class="bar"><span class="t">더건강한치과 리뉴얼 시안</span>
+<button data-v="A" class="on">A · 서지컬 클린</button><button data-v="B">B · 에디토리얼 웜</button><button data-v="C">C · 케어 가이드</button>
+<span class="sp"></span><span class="ref" id="ref"></span>
+<div class="dv"><button data-d="pc" class="on">PC</button><button data-d="m">모바일</button></div>
+<a class="cur" href="#" onclick="window.open(document.getElementById('fr').src);return false;">새 창으로 보기 ↗</a></div>
+<div class="stage" id="stage"><iframe id="fr" title="시안"></iframe></div>
+<script>
+const SRC={A:"a.html",B:"b.html",C:"c.html"};
+const DESC={A:'화이트·네이비 · 전문의 신뢰 · 실시간 진료 상태',B:'크림·우드 · 명조 에디토리얼 · 원장의 편지',C:'밝은 청록 · 고민으로 찾기 · 모바일 우선'};
+const fr=document.getElementById('fr');
+function show(v){document.querySelectorAll('[data-v]').forEach(function(b){b.classList.toggle('on',b.dataset.v===v);});fr.src=SRC[v];document.getElementById('ref').textContent=DESC[v];}
+document.querySelectorAll('[data-v]').forEach(function(b){b.onclick=function(){show(b.dataset.v);};});
+document.querySelectorAll('[data-d]').forEach(function(b){b.onclick=function(){document.querySelectorAll('[data-d]').forEach(function(x){x.classList.toggle('on',x===b);});document.getElementById('stage').classList.toggle('m',b.dataset.d==='m');};});
+addEventListener('keydown',function(e){var k={'1':'A','2':'B','3':'C'}[e.key];if(k)show(k);});
+show(location.hash==='#b'?'B':location.hash==='#c'?'C':'A');
+</script></body></html>
